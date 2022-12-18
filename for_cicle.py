@@ -64,14 +64,48 @@ Sum of all divisors
 #         total += i
 # print(total)
 
+
 """
 1−2+3−4+5−6+…+(−1) ** n+1 * n
 """
-total = 0
-for i in range(1, int(input()) + 1):
-    if i % 2 == 0:
-        total -= i
-    else:
-        total += i
-print(total)
+# total = 0
+# for i in range(1, int(input()) + 1):
+#     if i % 2 == 0:
+#         total -= i
+#     else:
+#         total += i
+# print(total)
 
+"""
+find two max number from sequence
+"""
+# mylist = []
+# for _ in range(int(input())):
+#     num = int(input())
+#     mylist.append(num)
+# mylist.sort()
+# print(mylist[-1])
+# print(mylist[-2])
+
+
+"""
+to find all numbers in sequence are even
+"""
+# flag = "YES"
+# for _ in range(10):
+#     num = int(input())
+#     if num % 2 == 1:
+#         flag = "NO"
+#         break
+# print(flag)
+
+
+"""
+number fibonacci
+"""
+# fib1 = 1
+# fib2 = 1
+# n = int(input())
+# for _ in range(n):
+#     print(fib1, end=" ")
+#     fib1, fib2 = fib2, fib1 + fib2
