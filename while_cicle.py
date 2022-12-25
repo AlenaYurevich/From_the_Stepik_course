@@ -27,10 +27,43 @@
 """
 Концом последовательности является любое число не делящееся на 7
 """
-while True:
-    num = int(input())
-    if num % 7 != 0:
-        break
-    print(num)
+# while True:
+#     num = int(input())
+#     if num % 7 != 0:
+#         break
+#     print(num)
+
+# num = int(input())
+# has_seven = False  # сигнальная метка
+#
+# while num != 0:
+#     last_digit = num % 10
+#     if last_digit == 7:
+#         has_seven = True
+#     num = num // 10
+#
+# if has_seven:
+#     print('YES')
+# else:
+#     print('NO')
+
+"""
+Программа должна вывести цифры введенного числа в столбик в обратном порядке
+"""
+# num = int(input())
+# while num != 0:
+#     print(num % 10)
+#     num = num // 10
+
+
+"""
+Программа должна вывести число, записанное в обратном порядке
+"""
+num = int(input())
+while num != 0:
+    print(num % 10, end='')
+    num = num // 10
+
+
 
 
