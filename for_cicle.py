@@ -109,3 +109,51 @@ number fibonacci
 # for _ in range(n):
 #     print(fib1, end=" ")
 #     fib1, fib2 = fib2, fib1 + fib2
+
+"""
+a clock
+"""
+# for hours in range(24):
+#     for minutes in range(60):
+#         for seconds in range(60):
+#             print(hours, ':', minutes, ':', seconds)
+
+"""
+printing
+"""
+# for i in range(8):
+#     for j in range(i + 1):
+#         print('*', end='')
+#     print()
+
+
+"""
+Программа должна вывести таблицу размером n×5 в соответствии с условием.
+"""
+# n = int(input())
+# for i in range(1, n + 1):
+#     for j in range(5):
+#         print(i, end=' ')
+#     print()
+
+
+"""
+Программа должна вывести таблицу сложения для всех чисел от 1 до n.
+"""
+# n = int(input())
+# for i in range(1, n + 1):
+#     for j in range(1, 10):
+#         print(i, '+', j, '=', i + j)
+#     print()
+
+"""
+Напишите программу, которая печатает равнобедренный звездный треугольник с основанием, равным n 
+"""
+n = int(input())
+counter = n // 2 + 1
+for i in range(1, counter):
+    print('*' * i)
+for i in range(counter, 0, -1):
+    print('*' * i)
+
+
