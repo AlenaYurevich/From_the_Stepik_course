@@ -149,11 +149,51 @@ printing
 """
 Напишите программу, которая печатает равнобедренный звездный треугольник с основанием, равным n 
 """
-n = int(input())
-counter = n // 2 + 1
-for i in range(1, counter):
-    print('*' * i)
-for i in range(counter, 0, -1):
-    print('*' * i)
+# n = int(input())
+# counter = n // 2 + 1
+# for i in range(1, counter):
+#     print('*' * i)
+# for i in range(counter, 0, -1):
+#     print('*' * i)
 
 
+"""
+Программа должна вывести треугольник в соответствии с условием
+"""
+# n = int(input())
+# for i in range(1, n + 1):
+#     print(str(i) * i)
+
+
+"""
+Корни квадратного уравнения
+"""
+# total = 0
+# for x in range(1, 45):
+#     for y in range(1, 45):
+#         for z in range(1, 45):
+#             if x ** 2 + y ** 2 + z ** 2 == 2020:
+#                 total += 1
+#                 print('x =', x, 'y =', y, 'z =', z)
+# print('Общее количество натуральных решений =', total)
+
+"""
+Находим незвестные переменные в цикле
+"""
+# for n in range(13):
+#     for k in range(12):
+#         for m in range(12):
+#             if 28 * n + 30 * k + 31 * m == 365:
+#                 print('n =', n, 'k =', k, 'm =', m)
+
+"""
+Старинная задача
+Имеется 100100 рублей. Сколько быков, коров и телят можно купить на все эти деньги,
+ если плата за быка – 10 рублей, за корову – 5 рублей, за теленка – 0.5 рубля 
+ и надо купить 100 голов скота?
+"""
+for b in range(11):
+    for k in range(21):
+        for t in range(0, 99, 2):
+            if b * 10 + k * 5 + t * 0.5 == 100 and b + k + t == 100:
+                print('b = ', b, 'k = ', k, 't = ', t)
