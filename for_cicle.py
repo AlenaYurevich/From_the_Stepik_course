@@ -192,8 +192,21 @@ printing
  если плата за быка – 10 рублей, за корову – 5 рублей, за теленка – 0.5 рубля 
  и надо купить 100 голов скота?
 """
-for b in range(11):
-    for k in range(21):
-        for t in range(0, 99, 2):
-            if b * 10 + k * 5 + t * 0.5 == 100 and b + k + t == 100:
-                print('b = ', b, 'k = ', k, 't = ', t)
+# for b in range(11):
+#     for k in range(21):
+#         for t in range(0, 99, 2):
+#             if b * 10 + k * 5 + t * 0.5 == 100 and b + k + t == 100:
+#                 print('b = ', b, 'k = ', k, 't = ', t)
+
+"""
+найдите четыре положительных целых числа, сумма 5-х степеней которых равна
+5-й степени другого положительного целого числа.
+"""
+for a in range(75, 2, -1):
+    for b in range(150, a, -1):
+        for c in range(150, b, -1):
+            for d in range(150, c, -1):
+                for e in range(150, d, -1):
+                    if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+                        print(a + b + c + d + e)
+                        break
