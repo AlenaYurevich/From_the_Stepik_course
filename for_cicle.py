@@ -202,11 +202,55 @@ printing
 найдите четыре положительных целых числа, сумма 5-х степеней которых равна
 5-й степени другого положительного целого числа.
 """
-for a in range(75, 2, -1):
-    for b in range(150, a, -1):
-        for c in range(150, b, -1):
-            for d in range(150, c, -1):
-                for e in range(150, d, -1):
-                    if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
-                        print(a + b + c + d + e)
-                        break
+# for a in range(2, 75):
+#     for b in range(150, a, -1):
+#         for c in range(150, b, -1):
+#             for d in range(150, c, -1):
+#                 for e in range(150, d, -1):
+#                     if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+#                         print(a + b + c + d + e)
+#                         break
+
+"""
+Программа должна вывести треугольник в соответствии с условием.
+"""
+# n = int(input())
+# count = 1
+# for i in range(n + 1):
+#     for j in range(i):
+#         print(count, end=' ')
+#         count += 1
+#     print()
+
+
+"""
+Дано натуральное число n. Напишите программу, которая печатает численный треугольник с высотой равной 
+n, в соответствии с примером
+"""
+# n = int(input())
+# counter = 1
+# for k in range(n):
+#     for i in range(1, counter // 2 + 1):
+#         print(i, end='')
+#     for i in range(counter // 2 + 1, 0, -1):
+#         print(i, end='')
+#     counter += 2
+#     print()
+
+
+"""
+Напишите программу, которая находит натуральное число из отрезка 
+[a;b] с максимальной суммой делителей.
+"""
+a, b = int(input()), int(input())
+num_max_dividers_sum = 0
+max_sum_dividers = 0
+for i in range(a, b + 1):
+    sum_dividers = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            sum_dividers += j
+    if sum_dividers >= max_sum_dividers:
+        num_max_dividers_sum = i
+        max_sum_dividers = sum_dividers
+print(num_max_dividers_sum, max_sum_dividers)
