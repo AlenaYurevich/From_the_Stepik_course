@@ -242,15 +242,32 @@ n, в соответствии с примером
 Напишите программу, которая находит натуральное число из отрезка 
 [a;b] с максимальной суммой делителей.
 """
-a, b = int(input()), int(input())
-num_max_dividers_sum = 0
-max_sum_dividers = 0
-for i in range(a, b + 1):
-    sum_dividers = 0
-    for j in range(1, i + 1):
-        if i % j == 0:
-            sum_dividers += j
-    if sum_dividers >= max_sum_dividers:
-        num_max_dividers_sum = i
-        max_sum_dividers = sum_dividers
-print(num_max_dividers_sum, max_sum_dividers)
+# a, b = int(input()), int(input())
+# num_max_dividers_sum = 0
+# max_sum_dividers = 0
+# for i in range(a, b + 1):
+#     sum_dividers = 0
+#     for j in range(1, i + 1):
+#         if i % j == 0:
+#             sum_dividers += j
+#     if sum_dividers >= max_sum_dividers:
+#         num_max_dividers_sum = i
+#         max_sum_dividers = sum_dividers
+# print(num_max_dividers_sum, max_sum_dividers)
+
+
+"""
+Программа должна вывести графическое изображение делителей чисел от 1 до 
+n, каждое на отдельной строке.
+"""
+# num = int(input())
+# for n in range(1, num + 1):
+#     counter = 1
+#     for j in range(2, n + 1):
+#         if n % j == 0:
+#             counter += 1
+#     print(n, '+' * counter, sep='')
+
+
+
+
