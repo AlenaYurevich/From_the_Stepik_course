@@ -120,6 +120,29 @@
 
 
 """
+Сумма факториалов от числа n до 1
+"""
+# n = int(input())
+# total = 1
+# for i in range(2, n + 1):
+#     factorial = 1
+#     while i > 1:
+#         factorial *= i
+#         i -= 1
+#     total += factorial
+# print(total)
+
 
 """
-n = int(input())
+if number is prime
+"""
+a, b = int(input()), int(input())
+for n in range(a, b + 1):
+    prime = True
+    i = 2
+    while i < n and prime:
+        if n % i == 0:
+            prime = False
+        i += 1
+    if n != 1 and prime:
+        print(n)
