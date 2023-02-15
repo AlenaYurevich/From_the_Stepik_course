@@ -174,9 +174,70 @@
 """
 Программа должна вывести количество буквенных символов в нижнем регистре
 """
+# s = input()
+# total = 0
+# for i in s:
+#     if i != i.upper():
+#         total += 1
+# print(total)
+
+
+# s = "  foo goo moo goo   "
+# print(s.count('oo'))
+# print(s.count('oo', 0, 8))
+# print(s.startswith('foo'))
+# print(s.startswith('bb'))
+# print(s.endswith('moo'))
+# print(s.endswith('ee'))
+# print(s.strip())
+# print(s.lstrip())
+# print(s.rstrip())
+# print(s.replace('goo', 'doo'))
+# print(s.replace('goo', 'doo', 1))
+#
+# s = 'I learn Python language. Python - awesome!'
+# print(s.find('Python'))
+
+"""
+Программа должна вывести количество слов
+"""
+# s = input()
+# print(s.count(' ') + 1)
+
+"""
+Программа должна вывести сколько гуанина, тимина, цитозина, аденина входит в данную строку генетического кода
+"""
+# s = input().lower()
+# print('Аденин:', s.count('а'))
+# print('Гуанин:', s.count('г'))
+# print('Цитозин:', s.count('ц'))
+# print('Тимин:', s.count('т'))
+
+
+"""
+Программа должна вывести количество строк в которых содержится число 11 минимум 3 раза
+"""
+# n = int(input())
+# counter = 0
+# for _ in range(n):
+#     s = input()
+#     if s.count('11') >= 3:
+#         counter += 1
+# print(counter)
+
+"""
+Программа должна вывести количество цифр в данной строке.
+"""
+# print(sum(i.isdigit() for i in input()))
+
+"""
+Программа должна вывести «YES» если введенная строка заканчивается подстрокой .com или .ru и «NO» в противном случае
+"""
 s = input()
-total = 0
-for i in s:
-    if i != i.upper():
-        total += 1
-print(total)
+res = "NO"
+if s.endswith('.com') or s.endswith('.ru'):
+    res = "YES"
+print(res)
+
+
+
