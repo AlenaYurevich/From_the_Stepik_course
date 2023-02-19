@@ -233,11 +233,91 @@
 """
 Программа должна вывести «YES» если введенная строка заканчивается подстрокой .com или .ru и «NO» в противном случае
 """
-s = input()
-res = "NO"
-if s.endswith('.com') or s.endswith('.ru'):
-    res = "YES"
-print(res)
+# s = input()
+# res = "NO"
+# if s.endswith('.com') or s.endswith('.ru'):
+#     res = "YES"
+# print(res)
+
+"""
+Программа должна вывести символ, который появляется наиболее часто
+"""
+# s = input()
+# counter = 0
+# char = s[0]
+# for c in s:
+#     if s.count(c) >= counter:
+#         counter = s.count(c)
+#         char = c
+#         s = s.replace(c, '')  # удаляем символ, который уже проверили
+#         print(s)
+# print(char)
+
+
+"""
+На вход программе подается строка текста. Если в этой строке буква «f» встречается только один раз,
+ выведите её индекс. Если она встречается два и более раз, выведите 
+ индекс её первого и последнего вхождения на одной строке, 
+ разделенных символом пробела. Если буква «f» в данной строке не 
+ встречается, следует вывести «NO».
+"""
+# s = input()
+# if s.count('f') == 1:
+#     print(s.find('f'))
+# elif s.count('f') >= 2:
+#     print(s.find('f'), s.rfind('f'))
+# else:
+#     print('NO')
+
+"""
+Напишите программу, которая удаляет из этой строки первое и 
+последнее вхождение буквы «h», а также все символы, находящиеся между ними
+"""
+# s = input()
+# print(s[:s.find('h')] + s[s.rfind('h') + 1:])
+
+
+"""
+Метод format
+"""
+# s = 'In {0}, someone paid {1}{2} for two pizzas.'.format('2010', '10k', 'Bitcoin')
+# print(s)
+
+
+"""
+f-строки
+"""
+# year = 2010
+# amount = '10K'
+# currency = 'Bitcoin'
+# print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
+
+"""
+Номер символа в таблице unicode и символ по номеру символа в таблице
+"""
+# num1 = ord('A')
+# num2 = ord('B')
+# num3 = ord('a')
+# print(num1, num2, num3)
+# chr1 = chr(65)
+# chr2 = chr(75)
+# chr3 = chr(110)
+# print(chr1, chr2, chr3)
+
+
+"""
+На вход программе подаются два числа a и b. Напишите программу, которая для каждого кодового значения в диапазоне от 
+a до b (включительно), выводит соответствующий ему символ из таблицы 
+символов Unicode
+"""
+# a, b = int(input()), int(input())
+# for i in range(a, b + 1):
+#     print(chr(i), end=' ')
+
+
+"""
+
+"""
 
 
 
