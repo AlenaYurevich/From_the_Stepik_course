@@ -325,13 +325,27 @@ ip-адресом, и «НЕТ» — в противном случае.
 
 
 """
+*****На вход программе подается строка текста, содержащая натуральные числа. 
+Из данной строки формируется список чисел. Напишите программу,
+которая подсчитывает, сколько в полученном списке пар элементов, равных друг другу
+"""
+# s = input().split()
+# counter = 0
+# for i in s:
+#     n = s.count(i) - 1
+#     counter += n
+#     s = s[1:]
+# print(counter)
+#
+# sp = input().split()
+# n = 0
+# for i in range(len(sp)):
+#     for j in range(i+1, len(sp)):
+#         if sp[j] == sp[i]:
+#             n += 1
+# print(n)
 
 """
-s = input().split()
-counter = 0
-for i in s:
-    n = i
-    counter += s.count(n) - 1
-    s.remove(s[0])
-    print('n = ', n, s.count(n), 'количество', counter)
-print(counter)
+
+"""
+
