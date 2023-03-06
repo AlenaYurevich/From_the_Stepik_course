@@ -346,6 +346,26 @@ ip-адресом, и «НЕТ» — в противном случае.
 # print(n)
 
 """
+List methods
+"""
+# numbers = [8, 9, 10, 11]
+# numbers[1] = 17
+# numbers.extend([4, 5, 6])
+# del numbers[0]
+# numbers *= 2
+# numbers.insert(3, 25)
+# print(numbers)
+
 
 """
+Из данной строки формируется список чисел. Напишите программу,
+которая меняет местами минимальный и максимальный элемент этого списка.
+"""
+# s = input().split()
+# li = [int(i) for i in s]
+# min_ind = li.index(min(li))
+# max_ind = li.index(max(li))
+# li[min_ind], li[max_ind] = max(li), min(li)
+# print(*li, sep=' ')
+
 
