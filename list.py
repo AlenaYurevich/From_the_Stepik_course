@@ -361,11 +361,62 @@ List methods
 Из данной строки формируется список чисел. Напишите программу,
 которая меняет местами минимальный и максимальный элемент этого списка.
 """
-# s = input().split()
-# li = [int(i) for i in s]
+# li = [int(i) for i in input().split()]
 # min_ind = li.index(min(li))
 # max_ind = li.index(max(li))
 # li[min_ind], li[max_ind] = max(li), min(li)
-# print(*li, sep=' ')
+# print(*li)
 
 
+"""
+Программа должна вывести общее количество артиклей 'a', 'an', 'the' вместе с поясняющим текстом
+"""
+# li = input().split()
+# count = 0
+# articles = ['a', 'an', 'the']
+# for i in li:
+#     if i.lower() in articles:
+#         count += 1
+# print('Общее количество артиклей:', count)
+
+
+"""
+Вывести строки без пробелов и комментариев
+"""
+# n = int(input()[1:])
+# for i in range(n):
+#     s = input()
+#     if '#' in s:
+#         s = s[:s.find('#')]
+#     print(s.rstrip())
+
+
+"""
+Сортировка списка по убыванию
+"""
+# a = [1, 7, -3, 9, 0, -67, 34, 12, 45, 1000, 6,  8, -2, 99]
+# a.sort(reverse=True)   # сортируем по убыванию
+# print('Отсортированный список:', a)
+
+"""
+На вход программе подается строка текста, содержащая целые числа. 
+Из данной строки формируется список чисел. Напишите программу,
+которая сортирует и выводит данный список сначала по возрастанию, а затем по убыванию
+"""
+# res = []
+# li = input().split()
+# for i in li:
+#     res.append(int(i))
+# res.sort()
+# print(*res)
+# res.sort(reverse=True)
+# print(*res)
+
+
+"""
+list comprehension
+"""
+numbers = [c for c in 'abcdef']
+print(numbers)
+lines = [input() for _ in range(int(input()))]
+numbers = [int(input()) for _ in range(int(input()))]
