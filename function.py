@@ -54,3 +54,87 @@
 # print_fio(name, surname, patronymic)
 
 
+# def print_digit_sum(num):
+#     print(sum(int(i) for i in str(num)))
+#
+#
+# print_digit_sum(12345)
+
+
+x = 5
+
+
+# def add():
+#     global x
+#     x = 3
+#     x = x + 5
+#     print(x)
+#
+#
+# add()
+# print(x)  # ответ 8 и 8! Мы изменили х в функции!
+
+
+# def get_sum(x, y, z):
+#     return x + y + z
+#     print('Сумма равна', x + y + z)  # после ретурн ничего не выполняется
+#
+#
+# print(get_sum(1, 2, 3))
+
+
+# def convert_to_miles(km):
+#     return km * 0.6214
+#
+# # считываем данные
+# num = int(input())
+#
+# # вызываем функцию
+# print(convert_to_miles(num))
+
+
+# def get_days(month):
+#     if month in (1, 3, 5, 7, 8, 10, 12):
+#         return 31
+#     elif month in (4, 6, 9, 11):
+#         return 30
+#     else:
+#         return 28
+#
+#
+# num = int(input())
+#
+#
+# print(get_days(num))
+
+
+# def get_factors(num):
+#     return [i for i in range(1, num // 2 + 1) if num % i == 0] + [num]
+#
+#
+# n = int(input())
+#
+#
+# print(get_factors(n))
+#
+#
+# def number_of_factors(num):
+#     return len(get_factors(num))
+#
+#
+# n = int(input())
+#
+#
+# print(number_of_factors(n))
+
+
+# def find_all(target, symbol):
+#     return [i for i in range(len(target)) if target[i] == symbol]
+#     # return [index for index, i in enumerate(target) if i == symbol]
+#
+#
+# s = input()
+# char = input()
+#
+#
+# print(find_all(s, char))
