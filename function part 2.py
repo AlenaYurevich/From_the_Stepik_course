@@ -4,7 +4,6 @@
 side1, side2, side3 и False в противном случае.
 """
 
-
 # def is_valid_triangle(side1, side2, side3):
 #     return side1 + side2 > side3 and side2 + side3 > side1 and side3 + side1 > side2
 #
@@ -21,7 +20,6 @@ side1, side2, side3 и False в противном случае.
 число и возвращает значение True если число является простым и False в противном случае.
 """
 
-
 # def is_prime(num):
 #     return len([1 for i in range(1, num + 1) if num % i == 0]) == 2
 
@@ -35,7 +33,6 @@ side1, side2, side3 и False в противном случае.
 Напишите функцию get_next_prime(num), которая принимает в качестве аргумента 
 натуральное число num и возвращает первое простое число большее числа num
 """
-
 
 # def get_next_prime(num):
 #     num += 1
@@ -54,28 +51,70 @@ side1, side2, side3 и False в противном случае.
 надежным и False в противном случае.
 """
 
+# def is_password_good(password):
+# if len(password) < 8:
+#     return False
+# flag1 = False
+# flag2 = False
+# flag3 = False
+# for c in password:
+#     if c.isupper():
+#         flag1 = True
+#     elif c.islower():
+#         flag2 = True
+#     elif c.isdigit():
+#         flag3 = True
+# return flag1 and flag2 and flag3
 
-def is_password_good(password):
-    counter = 0
-    if len(password) > 7:
-        counter += 1
-    for i in password:
-        if i.islower():
-            counter += 1
-            break
-    for i in password:
-        if i.isupper():
-            counter += 1
-            break
-    for i in password:
-        if i.isdigit():
-            counter += 1
-            break
-    return counter == 4
+
+#     if len(password) < 8:
+#         return False
+#     digit = upper = lower = False
+#     for c in password:
+#         digit |= c.isdigit()  # digit равно False или если есть цифра то True
+#         upper |= c.isupper()
+#         lower |= c.islower()
+#     return digit & upper & lower
+#
+#
+# txt = input()
+#
+# print(is_password_good(txt))
+
+"""
+Проверить, если строки отличаются только на один символ
+"""
+
+
+# def is_one_away(word1, word2):
+#     if len(word1) != len(word2):
+#         return False
+#     count = 0
+#     for i in range(len(word1)):
+#         if word1[i] != word2[i]:
+#             count += 1
+#     return count == 1
+#
+#
+# txt1 = input()
+# txt2 = input()
+#
+# print(is_one_away(txt1, txt2))
+
+"""
+
+"""
+
+
+def is_palindrome(text):
+    text1 = []
+    for i in text:
+        if i not in " ,-.?!№#$":
+            text1.append(i.lower())
+
+    return text1 == text1[::-1]
 
 
 txt = input()
 
-print(is_password_good(txt))
-
-#  посмотри форум решений
+print(is_palindrome(txt))
