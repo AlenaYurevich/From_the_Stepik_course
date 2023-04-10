@@ -106,15 +106,43 @@ side1, side2, side3 и False в противном случае.
 """
 
 
-def is_palindrome(text):
-    text1 = []
-    for i in text:
-        if i not in " ,-.?!№#$":
-            text1.append(i.lower())
+# def is_palindrome(text):
+#     text1 = []
+#     for i in text:
+#         if i not in " ,-.?!№#$":
+#             text1.append(i.lower())
+#
+#     return text1 == text1[::-1]
+#
+#
+# txt = input()
+#
+# print(is_palindrome(txt))
 
-    return text1 == text1[::-1]
+
+# def is_palindrome(num):
+#     return num == num[::-1]
+#
+#
+# def is_prime(num):
+#     return len([1 for i in range(1, num + 1) if num % i == 0]) == 2
+#
+#
+# def is_even(num):
+#     return num % 2 == 0
+#
+#
+# def is_valid_password(password):
+#     if password.count(":") != 2:
+#         return False
+#     a, b, c = password.split(":")[0], password.split(":")[1], password.split(":")[2]
+#     return is_palindrome(a) + is_prime(int(b)) + is_even(int(c)) == 3
+#
+#
+# psw = input()
+#
+#
+# print(is_valid_password(psw))
 
 
-txt = input()
 
-print(is_palindrome(txt))
