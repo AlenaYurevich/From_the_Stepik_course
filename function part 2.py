@@ -145,4 +145,24 @@ side1, side2, side3 и False в противном случае.
 # print(is_valid_password(psw))
 
 
+# def is_correct_bracket(text):
+#     while "()" in text:
+#         text = text.replace('()', '')
+#     return text == ''
+#
+#
+# # считываем данные
+# txt = input()
+#
+# # вызываем функцию
+# print(is_correct_bracket(txt))
+
+
+def convert_to_python_case(text):
+    return ''.join(['_'+c.lower() if c.isupper() else c for c in text]).lstrip('_')
+
+
+txt = input()
+
+print(convert_to_python_case(txt))
 
