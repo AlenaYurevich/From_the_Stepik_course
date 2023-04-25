@@ -97,16 +97,42 @@
 # print(number_to_words(n))
 
 
-def get_month(language, number):
-    en = ['', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
-          'november', 'december']
-    ru = ['', 'январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь',
-          'ноябрь', 'декабрь']
-    return en[number] if language == "en" else ru[number]
+# def get_month(language, number):
+#     en = ['', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
+#           'november', 'december']
+#     ru = ['', 'январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь',
+#           'ноябрь', 'декабрь']
+#     return en[number] if language == "en" else ru[number]
+#
+#
+# lan = input()
+# num = int(input())
+#
+#
+# print(get_month(lan, num))
 
 
-lan = input()
-num = int(input())
+# def is_magic(date):
+#     num = date.split('.')
+#     return int(num[0]) * int(num[1]) == int(num[2][2:])
+#
+#
+# date = input()
+#
+#
+# print(is_magic(date))
 
 
-print(get_month(lan, num))
+def is_pangram(text):
+    pangram = text.replace(' ', '').lower()
+    glif = 'abcdefghijklmnopqrstuvwxyz'
+    for i in glif:
+        if i not in pangram:
+            return False
+    return True
+
+
+text = input()
+
+
+print(is_pangram(text))
