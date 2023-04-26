@@ -123,16 +123,16 @@
 # print(is_magic(date))
 
 
-def is_pangram(text):
-    pangram = text.replace(' ', '').lower()
-    glif = 'abcdefghijklmnopqrstuvwxyz'
-    for i in glif:
-        if i not in pangram:
-            return False
-    return True
-
-
-text = input()
-
-
-print(is_pangram(text))
+# def is_pangram(text):
+#     pangram = text.replace(' ', '').lower()
+#     glif = 'abcdefghijklmnopqrstuvwxyz'
+#     for i in glif:
+#         if i not in pangram:
+#             return False
+#     return True
+#
+#
+# text = input()
+#
+#
+# print(is_pangram(text))
