@@ -103,21 +103,25 @@ def caesar_code(text2, step, encrypted_text=''):
 #     step += 1
 
 
-def caesar_code_3(text, step, encrypted_text=''):
+# На вход программе подается строка текста на английском языке, в которой нужно зашифровать все слова. Каждое слово строки следует зашифровать с помощью шифра Цезаря (циклического сдвига на длину этого слова). Строчные буквы при этом остаются строчными, а прописные – прописными. Гарантируется, что между различными словами присутствует один пробел.
+def caesar_code_3(text, encrypted_text=''):
     a = 'abcdefghijklmnopqrstuvwxyz'
-    res = []
+    res = ''
     words = text.split(" ")
-    print(words)
     for word in words:
+        step = len([1 for i in word if i.isalpha()])
         for i in word:
-            if i.lower() in a:
-                encrypted_text += a[a.find(i.lower()) + step]  # сдвиг вправо
+            if i == i.lower():
+                if i.lower() in a:
+                    encrypted_text += a[a.find(i.lower()) - 26 + step]  # сдвиг вправо
+                else:
+                    encrypted_text += i
             else:
-                encrypted_text += i
-        res.append(encrypted_text)
+                encrypted_text += a[a.find(i.lower()) - 26 + step].upper()  # сдвиг вправо
+        encrypted_text += ' '
+    res += encrypted_text
     print(res)
 
 
 text = 'Day, mice. "Year" is a mistake!'
-step = 1
-print(caesar_code_3(text, step))
+caesar_code_3(text)
