@@ -104,45 +104,5 @@
 """
 Напишите программу, которая определяет вторую (с начала) цифру.
 """
-# num = str(input())
-# print(num[1])
-
-"""
-Цифровой корень числа n получается следующим образом:
-если сложить все цифры этого числа, затем все цифры найденной суммы
-и повторить этот процесс, то в результате будет получено 
-однозначное число (цифра), которое и называется цифровым корнем данного числа.
-"""
-# n = int(input())
-# while n > 9:
-#     n = n // 10 + n % 10
-# print(n)
-
-
-"""
-Сумма факториалов от числа n до 1
-"""
-# n = int(input())
-# total = 1
-# for i in range(2, n + 1):
-#     factorial = 1
-#     while i > 1:
-#         factorial *= i
-#         i -= 1
-#     total += factorial
-# print(total)
-
-
-"""
-if number is prime
-"""
-a, b = int(input()), int(input())
-for n in range(a, b + 1):
-    prime = True
-    i = 2
-    while i < n and prime:
-        if n % i == 0:
-            prime = False
-        i += 1
-    if n != 1 and prime:
-        print(n)
+num = str(input())
+print(num[1])
