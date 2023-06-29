@@ -221,7 +221,7 @@ def play(word):
     while not guessed and tries > 0:
         print()
         letter = input("Введите букву_").upper()
-        if len(letter) == 1 and letter in "АБВГДЕЁЖЗИКЛМНОПРСТУФХЦЧШЩЪЬЭЫЮЯ":
+        if len(letter) == 1 and letter in "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЭЫЮЯ":
             if letter in word:
                 if letter not in guessed_letters:
                     indexes = [i for i in range(len(word)) if word[i] == letter]
